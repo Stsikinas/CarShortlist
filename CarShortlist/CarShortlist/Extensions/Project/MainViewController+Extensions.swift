@@ -12,7 +12,7 @@ import UIKit
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     /// Add initial properties to the tableview, for presentation purposes
-    func setupTableView() {
+    internal func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView(frame: .zero)

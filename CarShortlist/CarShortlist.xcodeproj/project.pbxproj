@@ -16,6 +16,7 @@
 		3096D51A293A52F60053CB4B /* CarShortlistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096D519293A52F60053CB4B /* CarShortlistTests.swift */; };
 		3096D524293A52F60053CB4B /* CarShortlistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096D523293A52F60053CB4B /* CarShortlistUITests.swift */; };
 		3096D526293A52F60053CB4B /* CarShortlistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096D525293A52F60053CB4B /* CarShortlistUITestsLaunchTests.swift */; };
+		30C23723293A93E7002E3BBA /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C23722293A93E7002E3BBA /* Car.swift */; };
 		30E27CBC293A655700889D6B /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E27CBB293A655700889D6B /* UIViewController+Extensions.swift */; };
 		30E27CC1293A8FC200889D6B /* MainViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E27CC0293A8FC200889D6B /* MainViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		3096D51F293A52F60053CB4B /* CarShortlistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarShortlistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3096D523293A52F60053CB4B /* CarShortlistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarShortlistUITests.swift; sourceTree = "<group>"; };
 		3096D525293A52F60053CB4B /* CarShortlistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarShortlistUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		30C23722293A93E7002E3BBA /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		30E27CBB293A655700889D6B /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		30E27CC0293A8FC200889D6B /* MainViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -164,6 +166,7 @@
 		3096D534293A53B00053CB4B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				30C23722293A93E7002E3BBA /* Car.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 			files = (
 				30E27CBC293A655700889D6B /* UIViewController+Extensions.swift in Sources */,
 				3096D507293A52F50053CB4B /* MainViewController.swift in Sources */,
+				30C23723293A93E7002E3BBA /* Car.swift in Sources */,
 				30E27CC1293A8FC200889D6B /* MainViewController+Extensions.swift in Sources */,
 				3096D503293A52F50053CB4B /* AppDelegate.swift in Sources */,
 				3096D505293A52F50053CB4B /* SceneDelegate.swift in Sources */,
