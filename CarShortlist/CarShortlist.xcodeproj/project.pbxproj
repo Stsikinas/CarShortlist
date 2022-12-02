@@ -76,6 +76,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3035F63C293A586300411F98 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3096D4F6293A52F40053CB4B = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +106,7 @@
 		3096D501293A52F50053CB4B /* CarShortlist */ = {
 			isa = PBXGroup;
 			children = (
+				3035F63C293A586300411F98 /* Extensions */,
 				3096D502293A52F50053CB4B /* AppDelegate.swift */,
 				3096D510293A52F60053CB4B /* Info.plist */,
 				3096D536293A53C00053CB4B /* Misc */,
