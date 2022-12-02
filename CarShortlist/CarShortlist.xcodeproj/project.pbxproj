@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		307EED1D293A98740024810B /* CarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307EED1C293A98740024810B /* CarsService.swift */; };
+		307EED21293A9C070024810B /* ServiceError+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307EED20293A9C070024810B /* ServiceError+Extensions.swift */; };
+		307EED24293A9D1F0024810B /* URLConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307EED23293A9D1F0024810B /* URLConverterTests.swift */; };
+		307EED27293A9DB80024810B /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307EED26293A9DB80024810B /* MockData.swift */; };
 		3096D503293A52F50053CB4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096D502293A52F50053CB4B /* AppDelegate.swift */; };
 		3096D505293A52F50053CB4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096D504293A52F50053CB4B /* SceneDelegate.swift */; };
 		3096D507293A52F50053CB4B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096D506293A52F50053CB4B /* MainViewController.swift */; };
 		3096D50A293A52F50053CB4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3096D508293A52F50053CB4B /* Main.storyboard */; };
 		3096D50C293A52F60053CB4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3096D50B293A52F60053CB4B /* Assets.xcassets */; };
 		3096D50F293A52F60053CB4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3096D50D293A52F60053CB4B /* LaunchScreen.storyboard */; };
-		3096D51A293A52F60053CB4B /* CarShortlistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096D519293A52F60053CB4B /* CarShortlistTests.swift */; };
 		3096D524293A52F60053CB4B /* CarShortlistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096D523293A52F60053CB4B /* CarShortlistUITests.swift */; };
 		3096D526293A52F60053CB4B /* CarShortlistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096D525293A52F60053CB4B /* CarShortlistUITestsLaunchTests.swift */; };
 		30C23723293A93E7002E3BBA /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C23722293A93E7002E3BBA /* Car.swift */; };
@@ -39,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		307EED1C293A98740024810B /* CarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsService.swift; sourceTree = "<group>"; };
+		307EED20293A9C070024810B /* ServiceError+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServiceError+Extensions.swift"; sourceTree = "<group>"; };
+		307EED23293A9D1F0024810B /* URLConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConverterTests.swift; sourceTree = "<group>"; };
+		307EED26293A9DB80024810B /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		3096D4FF293A52F50053CB4B /* CarShortlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarShortlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3096D502293A52F50053CB4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3096D504293A52F50053CB4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +55,6 @@
 		3096D50E293A52F60053CB4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3096D510293A52F60053CB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3096D515293A52F60053CB4B /* CarShortlistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarShortlistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3096D519293A52F60053CB4B /* CarShortlistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarShortlistTests.swift; sourceTree = "<group>"; };
 		3096D51F293A52F60053CB4B /* CarShortlistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarShortlistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3096D523293A52F60053CB4B /* CarShortlistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarShortlistUITests.swift; sourceTree = "<group>"; };
 		3096D525293A52F60053CB4B /* CarShortlistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarShortlistUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -92,6 +98,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		307EED22293A9D060024810B /* CarsServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				307EED25293A9DAB0024810B /* Helpers */,
+				307EED23293A9D1F0024810B /* URLConverterTests.swift */,
+			);
+			path = CarsServiceTests;
+			sourceTree = "<group>";
+		};
+		307EED25293A9DAB0024810B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				307EED26293A9DB80024810B /* MockData.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		3096D4F6293A52F40053CB4B = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +155,7 @@
 		3096D518293A52F60053CB4B /* CarShortlistTests */ = {
 			isa = PBXGroup;
 			children = (
-				3096D519293A52F60053CB4B /* CarShortlistTests.swift */,
+				307EED22293A9D060024810B /* CarsServiceTests */,
 			);
 			path = CarShortlistTests;
 			sourceTree = "<group>";
@@ -174,6 +197,7 @@
 		3096D535293A53B50053CB4B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				307EED1C293A98740024810B /* CarsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -244,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				30E27CC0293A8FC200889D6B /* MainViewController+Extensions.swift */,
+				307EED20293A9C070024810B /* ServiceError+Extensions.swift */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -382,6 +407,8 @@
 				30E27CBC293A655700889D6B /* UIViewController+Extensions.swift in Sources */,
 				3096D507293A52F50053CB4B /* MainViewController.swift in Sources */,
 				30C23723293A93E7002E3BBA /* Car.swift in Sources */,
+				307EED21293A9C070024810B /* ServiceError+Extensions.swift in Sources */,
+				307EED1D293A98740024810B /* CarsService.swift in Sources */,
 				30E27CC1293A8FC200889D6B /* MainViewController+Extensions.swift in Sources */,
 				3096D503293A52F50053CB4B /* AppDelegate.swift in Sources */,
 				3096D505293A52F50053CB4B /* SceneDelegate.swift in Sources */,
@@ -392,7 +419,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3096D51A293A52F60053CB4B /* CarShortlistTests.swift in Sources */,
+				307EED24293A9D1F0024810B /* URLConverterTests.swift in Sources */,
+				307EED27293A9DB80024810B /* MockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
