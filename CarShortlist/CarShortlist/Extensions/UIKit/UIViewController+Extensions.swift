@@ -11,7 +11,7 @@ import UIKit
 
 extension UIViewController {
     
-    /// Set navigation title to UIViewController and adjust color title color
+    /// Set navigation title to UIViewController and adjust title color
     func createNavigation(with title: String? = "Title") {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = title
