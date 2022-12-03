@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Car: Codable {
-    var make: String
-    var model: String
-    var price: String
-    var year: String
-    var km: String
-    var picture: String
+struct Car: Decodable {
+    var make: String?
+    var model: String?
+    var price: String?
+    var year: String?
+    var km: String?
+    var picture: String?
 }
