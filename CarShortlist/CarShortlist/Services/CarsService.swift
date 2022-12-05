@@ -24,7 +24,7 @@ protocol URLConverter {
 
 protocol JSONParser {
     func loadJSON(url: String, completion: @escaping(Result<Data, ServiceError>) -> ())
-    func parse(car data: Data) throws -> [Car]?
+    func parse(data: Data) throws -> [CarViewModel]
 }
 
 
@@ -69,13 +69,17 @@ struct CarsService: URLConverter, JSONParser {
         }
     }
     
-    func parse(car data: Data) throws -> [Car]? {
+    func parse(data: Data) throws -> [CarViewModel] {
+        var viewModels = [CarViewModel]()
         do {
             let carsList = try JSONDecoder().decode([Car].self, from: data)
             if (carsList.isEmpty) {
                 throw(ServiceError.EmptyJSON)
             }
-            return carsList
+            for car in carsList {
+                viewModels.append(CarViewModel(car: car, select: {}))
+            }
+            return viewModels
         } catch {
             throw(error)
         }

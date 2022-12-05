@@ -16,6 +16,7 @@
 		3019BB3F293DEE7C0061E685 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019BB3E293DEE7B0061E685 /* UIImageView+Extensions.swift */; };
 		3019BB41293DF1C10061E685 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019BB40293DF1C10061E685 /* UILabel+Extensions.swift */; };
 		3019BB46293DF7400061E685 /* CarVMHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019BB45293DF7400061E685 /* CarVMHelperTests.swift */; };
+		3019BB49293DFA210061E685 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019BB48293DFA210061E685 /* UITableView+Extensions.swift */; };
 		307EED1D293A98740024810B /* CarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307EED1C293A98740024810B /* CarsService.swift */; };
 		307EED21293A9C070024810B /* ServiceError+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307EED20293A9C070024810B /* ServiceError+Extensions.swift */; };
 		307EED24293A9D1F0024810B /* URLConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307EED23293A9D1F0024810B /* URLConverterTests.swift */; };
@@ -61,6 +62,7 @@
 		3019BB3E293DEE7B0061E685 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		3019BB40293DF1C10061E685 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 		3019BB45293DF7400061E685 /* CarVMHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVMHelperTests.swift; sourceTree = "<group>"; };
+		3019BB48293DFA210061E685 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		307EED1C293A98740024810B /* CarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsService.swift; sourceTree = "<group>"; };
 		307EED20293A9C070024810B /* ServiceError+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServiceError+Extensions.swift"; sourceTree = "<group>"; };
 		307EED23293A9D1F0024810B /* URLConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConverterTests.swift; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 				3019BB34293DDE3A0061E685 /* UIView+Extensions.swift */,
 				3019BB3E293DEE7B0061E685 /* UIImageView+Extensions.swift */,
 				3019BB40293DF1C10061E685 /* UILabel+Extensions.swift */,
+				3019BB48293DFA210061E685 /* UITableView+Extensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				3019BB37293DE5130061E685 /* CarCard+Extensions.swift in Sources */,
 				307EED21293A9C070024810B /* ServiceError+Extensions.swift in Sources */,
 				3019BB3B293DE9AF0061E685 /* CarViewModel+Extensions.swift in Sources */,
+				3019BB49293DFA210061E685 /* UITableView+Extensions.swift in Sources */,
 				307EED1D293A98740024810B /* CarsService.swift in Sources */,
 				3019BB3D293DEB720061E685 /* String+Extensions.swift in Sources */,
 				3019BB39293DE92C0061E685 /* CarViewModel.swift in Sources */,

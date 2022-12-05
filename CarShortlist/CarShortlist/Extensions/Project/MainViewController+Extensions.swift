@@ -15,18 +15,62 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     internal func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.separatorStyle = .none
         tableView.tableFooterView = UIView(frame: .zero)
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.register(CarCard.self, forCellReuseIdentifier: cellID)
     }
     
+    // MARK: - UITableView funcs
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        0
+        carsVM.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as? CarCard else {
+            return UITableViewCell()
+        }
+        cell.carViewModel = carsVM[indexPath.row]
+        
+        return cell
     }
     
+    // MARK: - Update funcs
+    internal func refreshData() {
+        tableView.addSpinner()
+        DispatchQueue.global().async { [weak self] in
+            self?.carService.loadJSON(url: self?.carService.urlLink ?? "") { result in
+                switch result {
+                case .success(let data):
+                    do {
+                        self?.carsVM = try self?.carService.parse(data: data) ?? []
+                        DispatchQueue.main.async {
+                            self?.tableView.hideSpinner()
+                            self?.tableView.reloadData()
+                        }
+                    } catch {
+                        DispatchQueue.main.async {
+                            self?.tableView.hideSpinner()
+                        }
+                    }
+                    break
+                case .failure(let error):
+                    print(error.getDescription)
+                    DispatchQueue.main.async {
+                        self?.tableView.hideSpinner()
+                    }
+                    break
+                }
+            }
+        }
+    }
+    
+    public func select(_ car: CarViewModel) {
+//            let destVC = CardViewController()
+//            destVC.card = cards
+//            destVC.favoriteService = dataService?.favoritesService
+//            show(destVC, sender: self)
+        }
     
     
 }

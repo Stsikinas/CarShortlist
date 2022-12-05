@@ -10,6 +10,13 @@ import UIKit
 class CarCard: UITableViewCell {
     
     // MARK: - Subview Initializers
+    
+    lazy var itemView: UIView = {
+        let view = UIView()
+        view.cardView(ofRadius: 12.0)
+        return view
+    }()
+    
     lazy var carImage: UIImageView = {
         let imageView = UIImageView()
         return imageView
@@ -26,7 +33,7 @@ class CarCard: UITableViewCell {
     lazy var carPrice: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 13, weight: .heavy)
-        label.textAlignment = .left
+        label.textAlignment = .right
         label.textColor = .lightText
         label.numberOfLines = 0
         return label
@@ -43,14 +50,22 @@ class CarCard: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        cardView(ofRadius: 12.0)
+        selectionStyle = .none
+        backgroundColor = .clear
         
-        addSubview(carImage)
-        carImage.addAnchors(wAnchor: widthAnchor, 0.8, hAnchor: heightAnchor, 0.5, cXAnchor: centerXAnchor, tAnchor: topAnchor, topConstant: 4)
-        addSubview(carModel)
-        carModel.addAnchors(wAnchor: widthAnchor, 0.75, lAnchor: leftAnchor, leftConstant: 8, tAnchor: carImage.bottomAnchor, topConstant: 8)
-        addSubview(carPrice)
-        carPrice.addAnchors(wAnchor: widthAnchor, 0.75, tAnchor: carModel.bottomAnchor, topConstant: 14, rAnchor: rightAnchor, rightConstant: 4, bAnchor: bottomAnchor, bottomConstant: -12)
+        addSubview(itemView)
+        itemView.addAnchors(wAnchor: widthAnchor, 0.95, hAnchor: heightAnchor, 0.90, cXAnchor: centerXAnchor, cYAnchor: centerYAnchor)
+        
+        itemView.addSubview(carImage)
+        carImage.addAnchors(wAnchor: itemView.widthAnchor, 0.8, cXAnchor: itemView.centerXAnchor, tAnchor: itemView.topAnchor, topConstant: 4, heightConstant: 150)
+        itemView.addSubview(carModel)
+        carModel.addAnchors(wAnchor: itemView.widthAnchor, 0.75, lAnchor: itemView.leftAnchor, leftConstant: 8, tAnchor: carImage.bottomAnchor, topConstant: 8)
+        itemView.addSubview(carPrice)
+        carPrice.addAnchors(wAnchor: itemView.widthAnchor, 0.35, tAnchor: carModel.bottomAnchor, topConstant: 14, rAnchor: itemView.rightAnchor, rightConstant: -8, bAnchor: itemView.bottomAnchor, bottomConstant: -12)
+        
+        
+        itemView.layer.borderWidth = 0.35
+        itemView.layer.borderColor = UIColor(named: "AccentColor")?.cgColor
         
     }
     

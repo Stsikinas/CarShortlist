@@ -33,9 +33,12 @@ extension UIImageView {
                     let data = data, error == nil,
                     let image = UIImage(data: data) else {
                             // Add placeholder image for corrupt image paths
+                        DispatchQueue.main.async() {
                             self?.image = UIImage(named: "PlaceholderCar")
                             self?.contentMode = mode
-                            return
+                            activityIndicator.stopAnimating()
+                        }
+                        return
                     }
                     DispatchQueue.main.async() {
                         self?.image = image

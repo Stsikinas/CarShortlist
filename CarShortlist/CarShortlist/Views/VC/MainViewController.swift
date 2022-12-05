@@ -9,12 +9,30 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
+    
+    
+    // MARK: - Variables
+    // Public
+    
+    // Private
+    internal let carService = CarsService()
+    internal var carsVM = [CarViewModel]()
+    internal let cellID = "carCell"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         createNavigation(with: "Cars Shortlist")
+        setupTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        refreshData()
         
     }
 

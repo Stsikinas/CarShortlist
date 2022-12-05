@@ -12,6 +12,6 @@ extension CarCard {
     internal func configure() {
         carImage.load(from: carViewModel.carImage.convertToURL, with: .scaleAspectFit)
         carModel.text = carViewModel.description
-        carPrice.makeAttributed(with: UIImage(named: "tag.fill"), text: carViewModel.price)
+        carPrice.makeAttributed(with: UIImage(systemName: "tag.fill"), text: carViewModel.price)
     }
 }
