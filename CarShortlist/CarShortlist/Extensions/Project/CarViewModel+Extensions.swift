@@ -9,16 +9,15 @@ import Foundation
 
 extension CarViewModel {
     
-    internal func carDescription(make: String, model: String) -> String {
-        "\(make) - \(model)"
-    }
-    
-}
-
-extension CarViewModel {
-    
     /// Add a secondary initializer, to help in detail VC
     convenience init(car: Car) {
         self.init(car: car, select: {})
+        self.manufacturer = car.make
+        self.model = car.model
+        if isSafeEmpty(text: car.km) {
+            self.details = car.year ?? ""
+        } else {
+            self.details = makeDetails(det1: car.year ?? "", det2: "\(String(describing: car.km))km" )
+        }
     }
 }

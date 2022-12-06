@@ -44,7 +44,7 @@ class JSONParserTests: XCTestCase {
     
     func testEmptyData() {
         if let data = emptyJSON.data(using: .utf8) {
-            XCTAssertThrowsError(try self.sut.parse(car: data))
+            XCTAssertThrowsError(try self.sut.parse(data: data, view: nil))
         }
     }
     
@@ -56,7 +56,7 @@ class JSONParserTests: XCTestCase {
             switch result {
             case .success(let data):
                 do {
-                    let cars = try self.sut.parse(car: data)
+                    let cars = try self.sut.parse(data: data, view: nil)
                     XCTAssertNotNil(cars)
                 } catch {
                     XCTFail("The cars couldn't be parsed.")

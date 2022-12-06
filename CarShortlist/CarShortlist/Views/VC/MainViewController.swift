@@ -29,15 +29,9 @@ class MainViewController: UIViewController {
         
         createNavigation(with: "Cars Shortlist")
         setupTableView()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         
         refreshData()
-        
     }
-
 
 }
 

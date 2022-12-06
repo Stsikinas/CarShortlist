@@ -10,6 +10,10 @@ import UIKit
 class CarViewController: UIViewController {
 
     // MARK: - Outlets
+    @IBOutlet weak var carImageView: UIImageView!
+    @IBOutlet weak var carModel: UILabel!
+    @IBOutlet weak var carPrice: UILabel!
+    @IBOutlet weak var carDetails: UILabel!
     
     
     // MARK: - Variables
@@ -19,7 +23,12 @@ class CarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        guard let carVM = carVM else {
+            return
+        }
+        
+        createNavigation(with: carVM.manufacturer)
+        
     }
 
 }

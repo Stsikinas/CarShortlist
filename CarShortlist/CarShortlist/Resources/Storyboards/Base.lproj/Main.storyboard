@@ -102,6 +102,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EnK-Dj-udT"/>
+                    <connections>
+                        <outlet property="carDetails" destination="Jt3-b6-PPa" id="8ja-OW-nto"/>
+                        <outlet property="carImageView" destination="VaC-Tb-f9D" id="FZl-HR-xsK"/>
+                        <outlet property="carModel" destination="is4-hk-wka" id="2YN-fF-J24"/>
+                        <outlet property="carPrice" destination="KYc-JN-lca" id="U4N-1l-sJ1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBH-wI-8dP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

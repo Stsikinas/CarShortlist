@@ -81,8 +81,8 @@ extension MainViewController {
 extension MainViewController {
     
     public func select(_ car: Car) {
-        performSegue(withIdentifier: segueID, sender: self)
         carSelected = car
+        performSegue(withIdentifier: segueID, sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

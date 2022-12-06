@@ -10,21 +10,21 @@ import Foundation
 class CarViewModel {
     
     let carImage: String
-    var description: String
     let price: String
+    // List View
+    var description: String?
     let select: () -> Void?
-    let year: String?
-    let kms: String?
+    // Detail View
+    var manufacturer: String?
+    var model: String?
+    var details: String?
     
     // MARK: - Initializers
     init(car: Car, select: @escaping () -> Void) {
         self.carImage = car.picture ?? ""
-        self.description = ""
         self.price = car.price?.toEuros ?? "0".toEuros
         self.select = select
-        self.year = car.year
-        self.kms = car.km
-        self.description = carDescription(make: car.make ?? "", model: car.model ?? "")
+        self.description = makeDetails(det1: car.make ?? "", det2: car.model ?? "")
     }
     
 }
