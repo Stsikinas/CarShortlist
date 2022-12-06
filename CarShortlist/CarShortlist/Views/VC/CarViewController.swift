@@ -28,7 +28,7 @@ class CarViewController: UIViewController {
         }
         
         createNavigation(with: carVM.manufacturer)
-        
+        setupView()
     }
 
 }

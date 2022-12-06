@@ -10,9 +10,9 @@ import UIKit
 
 extension UILabel {
     
-    func makeAttributed(with icon: UIImage?, text: String) {
+    func makeAttributed(with icon: UIImage?, colored: UIColor?, text: String) {
         let imageAttachment = NSTextAttachment()
-        imageAttachment.image = icon?.withTintColor(UIColor(named: "AccentColor") ?? .systemBlue)
+        imageAttachment.image = icon?.withTintColor(colored ?? .systemBlue)
         let imageOffsetY: CGFloat = -5.0
         imageAttachment.bounds = CGRect(x: 0, y: imageOffsetY, width: imageAttachment.image!.size.width, height: imageAttachment.image!.size.height)
         let attachmentString = NSAttributedString(attachment: imageAttachment)

@@ -33,6 +33,7 @@
 		309D3962293F2E3D00D3958E /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D3961293F2E3D00D3958E /* CarViewController.swift */; };
 		309D3964293F440900D3958E /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D3963293F440900D3958E /* Formatters.swift */; };
 		309D3966293F480E00D3958E /* MockVMData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D3965293F480E00D3958E /* MockVMData.swift */; };
+		309D3968293F499700D3958E /* CarViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D3967293F499700D3958E /* CarViewController+Extensions.swift */; };
 		30C23723293A93E7002E3BBA /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C23722293A93E7002E3BBA /* Car.swift */; };
 		30E27CBC293A655700889D6B /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E27CBB293A655700889D6B /* UIViewController+Extensions.swift */; };
 		30E27CC1293A8FC200889D6B /* MainViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E27CC0293A8FC200889D6B /* MainViewController+Extensions.swift */; };
@@ -86,6 +87,7 @@
 		309D3961293F2E3D00D3958E /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
 		309D3963293F440900D3958E /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		309D3965293F480E00D3958E /* MockVMData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockVMData.swift; sourceTree = "<group>"; };
+		309D3967293F499700D3958E /* CarViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CarViewController+Extensions.swift"; sourceTree = "<group>"; };
 		30C23722293A93E7002E3BBA /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		30E27CBB293A655700889D6B /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		30E27CC0293A8FC200889D6B /* MainViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 				307EED20293A9C070024810B /* ServiceError+Extensions.swift */,
 				3019BB36293DE5120061E685 /* CarCard+Extensions.swift */,
 				3019BB3A293DE9AF0061E685 /* CarViewModel+Extensions.swift */,
+				309D3967293F499700D3958E /* CarViewController+Extensions.swift */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				30E27CBC293A655700889D6B /* UIViewController+Extensions.swift in Sources */,
 				3096D507293A52F50053CB4B /* MainViewController.swift in Sources */,
 				3019BB35293DDE3A0061E685 /* UIView+Extensions.swift in Sources */,
+				309D3968293F499700D3958E /* CarViewController+Extensions.swift in Sources */,
 				30C23723293A93E7002E3BBA /* Car.swift in Sources */,
 				3019BB37293DE5130061E685 /* CarCard+Extensions.swift in Sources */,
 				307EED21293A9C070024810B /* ServiceError+Extensions.swift in Sources */,

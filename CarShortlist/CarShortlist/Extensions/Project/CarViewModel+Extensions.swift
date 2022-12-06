@@ -17,7 +17,7 @@ extension CarViewModel {
         if isSafeEmpty(text: car.km) {
             self.details = car.year ?? ""
         } else {
-            self.details = makeDetails(det1: car.year ?? "", det2: "\(String(describing: car.km))km" )
+            self.details = makeDetails(det1: car.year ?? "", det2: "\(car.km ?? "")km" )
         }
     }
 }
