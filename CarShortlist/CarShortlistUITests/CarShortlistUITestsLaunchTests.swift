@@ -2,7 +2,7 @@
 //  CarShortlistUITestsLaunchTests.swift
 //  CarShortlistUITests
 //
-//  Created by Epsilon User on 2/12/22.
+//  Created by Stavros Tsikinas on 2/12/22.
 //
 
 import XCTest

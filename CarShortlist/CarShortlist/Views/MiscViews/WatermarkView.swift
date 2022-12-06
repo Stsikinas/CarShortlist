@@ -2,7 +2,7 @@
 //  WatermarkView.swift
 //  CarShortlist
 //
-//  Created by Epsilon User on 6/12/22.
+//  Created by Stavros Tsikinas on 6/12/22.
 //
 
 import UIKit

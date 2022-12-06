@@ -2,7 +2,7 @@
 //  String+Extensions.swift
 //  CarShortlist
 //
-//  Created by Epsilon User on 5/12/22.
+//  Created by Stavros Tsikinas on 5/12/22.
 //
 
 import Foundation

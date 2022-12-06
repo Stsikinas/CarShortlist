@@ -2,7 +2,7 @@
 //  CarVMHelperTests.swift
 //  CarShortlistTests
 //
-//  Created by Epsilon User on 5/12/22.
+//  Created by Stavros Tsikinas on 5/12/22.
 //
 
 import XCTest
