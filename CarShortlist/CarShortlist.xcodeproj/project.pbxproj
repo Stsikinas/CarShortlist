@@ -34,6 +34,8 @@
 		309D3964293F440900D3958E /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D3963293F440900D3958E /* Formatters.swift */; };
 		309D3966293F480E00D3958E /* MockVMData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D3965293F480E00D3958E /* MockVMData.swift */; };
 		309D3968293F499700D3958E /* CarViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D3967293F499700D3958E /* CarViewController+Extensions.swift */; };
+		309DF3C1293F4FC90081E536 /* Kanit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 309DF3C0293F4FC90081E536 /* Kanit-Regular.ttf */; };
+		309DF3C3293F51FB0081E536 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DF3C2293F51FB0081E536 /* UIFont+Extensions.swift */; };
 		30C23723293A93E7002E3BBA /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C23722293A93E7002E3BBA /* Car.swift */; };
 		30E27CBC293A655700889D6B /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E27CBB293A655700889D6B /* UIViewController+Extensions.swift */; };
 		30E27CC1293A8FC200889D6B /* MainViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E27CC0293A8FC200889D6B /* MainViewController+Extensions.swift */; };
@@ -88,6 +90,8 @@
 		309D3963293F440900D3958E /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		309D3965293F480E00D3958E /* MockVMData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockVMData.swift; sourceTree = "<group>"; };
 		309D3967293F499700D3958E /* CarViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CarViewController+Extensions.swift"; sourceTree = "<group>"; };
+		309DF3C0293F4FC90081E536 /* Kanit-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Regular.ttf"; sourceTree = "<group>"; };
+		309DF3C2293F51FB0081E536 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 		30C23722293A93E7002E3BBA /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		30E27CBB293A655700889D6B /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		30E27CC0293A8FC200889D6B /* MainViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -263,6 +267,7 @@
 		3096D537293A53C80053CB4B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				309DF3BF293F4FBC0081E536 /* Fonts */,
 				3096D53B293A54310053CB4B /* Storyboards */,
 				3096D50B293A52F60053CB4B /* Assets.xcassets */,
 			);
@@ -302,6 +307,14 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		309DF3BF293F4FBC0081E536 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				309DF3C0293F4FC90081E536 /* Kanit-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		30E27CBD293A8F7900889D6B /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +323,7 @@
 				3019BB3E293DEE7B0061E685 /* UIImageView+Extensions.swift */,
 				3019BB40293DF1C10061E685 /* UILabel+Extensions.swift */,
 				3019BB48293DFA210061E685 /* UITableView+Extensions.swift */,
+				309DF3C2293F51FB0081E536 /* UIFont+Extensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -441,6 +455,7 @@
 				3096D50F293A52F60053CB4B /* LaunchScreen.storyboard in Resources */,
 				3096D50C293A52F60053CB4B /* Assets.xcassets in Resources */,
 				3096D50A293A52F50053CB4B /* Main.storyboard in Resources */,
+				309DF3C1293F4FC90081E536 /* Kanit-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +493,7 @@
 				3019BB49293DFA210061E685 /* UITableView+Extensions.swift in Sources */,
 				307EED1D293A98740024810B /* CarsService.swift in Sources */,
 				3019BB3D293DEB720061E685 /* String+Extensions.swift in Sources */,
+				309DF3C3293F51FB0081E536 /* UIFont+Extensions.swift in Sources */,
 				3019BB39293DE92C0061E685 /* CarViewModel.swift in Sources */,
 				309D3964293F440900D3958E /* Formatters.swift in Sources */,
 				30E27CC1293A8FC200889D6B /* MainViewController+Extensions.swift in Sources */,
