@@ -9,24 +9,18 @@ import Foundation
 import UIKit
 
 extension UITableView {
-    
-    private var loading: UIActivityIndicatorView {
-        get {
-            let indicator = UIActivityIndicatorView(style: .medium)
-            indicator.color = UIColor(named: "PrimaryColor") ?? .systemBlue
-            return indicator
-        }
-    }
         
-    func addSpinner() {
+    func addSpinner(loading: UIActivityIndicatorView?) {
         backgroundView = loading
-        loading.startAnimating()
+        loading?.startAnimating()
     }
         
-    func hideSpinner() {
-        if loading.isAnimating {
-            loading.stopAnimating()
-            backgroundView = nil
+    func hideSpinner(loading: UIActivityIndicatorView?) {
+        if let loading = loading {
+            if loading.isAnimating {
+                loading.stopAnimating()
+                backgroundView = nil
+            }
         }
     }
 }

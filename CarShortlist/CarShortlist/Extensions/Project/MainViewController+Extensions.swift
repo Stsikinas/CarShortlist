@@ -19,6 +19,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.tableFooterView = UIView(frame: .zero)
         tableView.rowHeight = UITableView.automaticDimension
         tableView.register(CarCard.self, forCellReuseIdentifier: cellID)
+        loading.color = UIColor(named: "PrimaryColor") ?? .systemBlue
     }
     
     // MARK: - UITableView funcs
@@ -37,7 +38,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     // MARK: - Update funcs
     internal func refreshData() {
-        tableView.addSpinner()
+        tableView.addSpinner(loading: loading)
         DispatchQueue.global().async { [weak self] in
             self?.carService.loadJSON(url: self?.carService.urlLink ?? "") { result in
                 switch result {
@@ -45,19 +46,19 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
                     do {
                         self?.carsVM = try self?.carService.parse(data: data) ?? []
                         DispatchQueue.main.async {
-                            self?.tableView.hideSpinner()
+                            self?.tableView.hideSpinner(loading: self?.loading)
                             self?.tableView.reloadData()
                         }
                     } catch {
                         DispatchQueue.main.async {
-                            self?.tableView.hideSpinner()
+                            self?.tableView.hideSpinner(loading: self?.loading)
                         }
                     }
                     break
                 case .failure(let error):
                     print(error.getDescription)
                     DispatchQueue.main.async {
-                        self?.tableView.hideSpinner()
+                        self?.tableView.hideSpinner(loading: self?.loading)
                     }
                     break
                 }
