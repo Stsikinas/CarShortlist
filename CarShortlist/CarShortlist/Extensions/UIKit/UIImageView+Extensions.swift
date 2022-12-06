@@ -26,7 +26,9 @@ extension UIImageView {
             activityIndicator.addAnchors(cXAnchor: centerXAnchor, cYAnchor: centerYAnchor)
             activityIndicator.startAnimating()
             
-            URLSession.shared.dataTask(with: url) {  [weak self] data, response, error in
+            let request = URLRequest(url: url, timeoutInterval: TimeInterval(5))
+            
+            URLSession.shared.dataTask(with: request) {  [weak self] data, response, error in
                 guard
                     let httpURLResponse = response as? HTTPURLResponse,
                     httpURLResponse.statusCode == 200,

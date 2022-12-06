@@ -20,7 +20,7 @@ class MainViewController: UIViewController {
     internal let carService = CarsService()
     internal var carsVM = [CarViewModel]()
     internal let cellID = "carCell"
-    internal let loading = UIActivityIndicatorView(style: .medium)
+    internal let loading = UIActivityIndicatorView(style: .large)
     
     
     override func viewDidLoad() {
