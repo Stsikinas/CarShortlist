@@ -97,6 +97,7 @@
 		309DF3C4293F59410081E536 /* Error+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Extensions.swift"; sourceTree = "<group>"; };
 		30C23722293A93E7002E3BBA /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		30CD9C86293F60C200901908 /* WatermarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatermarkView.swift; sourceTree = "<group>"; };
+		30E11857293F73CA00D6802C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		30E27CBB293A655700889D6B /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		30E27CC0293A8FC200889D6B /* MainViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +175,7 @@
 		3096D4F6293A52F40053CB4B = {
 			isa = PBXGroup;
 			children = (
+				30E11857293F73CA00D6802C /* README.md */,
 				3096D501293A52F50053CB4B /* CarShortlist */,
 				3096D518293A52F60053CB4B /* CarShortlistTests */,
 				3096D522293A52F60053CB4B /* CarShortlistUITests */,
