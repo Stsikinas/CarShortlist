@@ -65,9 +65,9 @@ extension MainViewController {
                     }
                     break
                 case .failure(let error):
-                    print(error.getDescription)
                     DispatchQueue.main.async {
                         self?.tableView.hideSpinner(loading: self?.loading)
+                        self?.showInfoAlert(with: error.getDescription)
                     }
                     break
                 }
