@@ -88,7 +88,7 @@ struct CarsService: URLConverter, JSONParser {
             }
             return viewModels
         } catch {
-            throw(error)
+            throw(ServiceError.GeneralError)
         }
     }
     

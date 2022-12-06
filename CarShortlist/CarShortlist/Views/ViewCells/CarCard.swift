@@ -24,7 +24,7 @@ class CarCard: UITableViewCell {
     
     lazy var carModel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.kanitFont(size: 15)//UIFont.systemFont(ofSize: 15, weight: .heavy)
+        label.font = UIFont.kanitFont(size: 15)
         label.textAlignment = .left
         label.numberOfLines = 0
         return label
@@ -32,7 +32,7 @@ class CarCard: UITableViewCell {
     
     lazy var carPrice: UILabel = {
         let label = UILabel()
-        label.font = UIFont.kanitFont(size: 13)//UIFont.systemFont(ofSize: 13, weight: .heavy)
+        label.font = UIFont.kanitFont(size: 13)
         label.textAlignment = .right
         label.textColor = UIColor(named: "PrimaryColor")
         label.numberOfLines = 0

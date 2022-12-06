@@ -24,3 +24,16 @@ extension UITableView {
         }
     }
 }
+
+extension UITableView {
+    
+    func showWatermarkView(_ image: UIImage? = nil, text: String = "") {
+        if let image = image {
+            backgroundView = WatermarkView(frame: bounds, with: text, image: image)
+        }
+    }
+    
+    func hidePlaceholderView() {
+            backgroundView = nil
+        }
+}

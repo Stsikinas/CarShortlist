@@ -28,6 +28,9 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         createNavigation(with: "Cars Shortlist")
+        
+        addRefreshButton()
+        
         setupTableView()
         
         refreshData()

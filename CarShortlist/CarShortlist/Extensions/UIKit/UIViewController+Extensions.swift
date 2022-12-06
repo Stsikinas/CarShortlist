@@ -21,10 +21,19 @@ extension UIViewController {
         
     }
     
-    internal func showInfoAlert(with message: String) {
-            let alert = UIAlertController(title: "Info", message: message, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default))
-            present(alert, animated: true)
+    internal func addButtons(right: [UIBarButtonItem]? = nil, left: [UIBarButtonItem]? = nil) {
+            if let right = right {
+                navigationItem.setRightBarButtonItems(right, animated: true)
+            }
+            if let left = left {
+                navigationItem.setLeftBarButtonItems(left, animated: true)
+            }
         }
+    
+    internal func showInfoAlert(with message: String) {
+        let alert = UIAlertController(title: "Info", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
+    }
     
 }

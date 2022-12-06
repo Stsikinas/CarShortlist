@@ -55,19 +55,22 @@ extension MainViewController {
                     do {
                         self?.carsVM = try self?.carService.parse(data: data, view: self) ?? []
                         DispatchQueue.main.async {
-                            self?.tableView.hideSpinner(loading: self?.loading)
-                            self?.tableView.reloadData()
+                            self?.updateOnComplete()
                         }
                     } catch {
                         DispatchQueue.main.async {
-                            self?.tableView.hideSpinner(loading: self?.loading)
+                            if let error = error as? ServiceError {
+                                self?.updateOnError(error)
+                            } else {
+                                self?.updateOnError(ServiceError.GeneralError)
+                            }
+                            
                         }
                     }
                     break
                 case .failure(let error):
                     DispatchQueue.main.async {
-                        self?.tableView.hideSpinner(loading: self?.loading)
-                        self?.showInfoAlert(with: error.getDescription)
+                        self?.updateOnError(error)
                     }
                     break
                 }
@@ -75,6 +78,30 @@ extension MainViewController {
         }
     }
     
+    private func updateOnComplete() {
+        tableView.hideSpinner(loading: loading)
+        tableView.hidePlaceholderView()
+        tableView.reloadData()
+    }
+    
+    private func updateOnError(_ error: ServiceError) {
+        tableView.hideSpinner(loading: loading)
+        tableView.showWatermarkView(UIImage(named: "Watermark"), text: error.getDescription)
+        showInfoAlert(with: error.getDescription)
+        tableView.reloadData()
+    }
+    
+}
+
+extension MainViewController {
+    func addRefreshButton() {
+        let refreshButton = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(buttonRefresh))
+        addButtons(right: [refreshButton])
+    }
+    
+    @objc func buttonRefresh() {
+        refreshData()
+    }
     
 }
 
