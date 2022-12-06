@@ -17,6 +17,8 @@ extension ServiceError {
                 return "There was an error getting your car list. Please contact the support service."
             case .EmptyJSON:
                 return "The list is empty."
+            case .NoConnection:
+                return "You appear to be offline. Please  make sure the device is online and try again."
             default:
                 return "A generic error occurred. Please try again later."
         }

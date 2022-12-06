@@ -14,6 +14,7 @@ enum ServiceError: Error {
     case EndpointNotValid
     case EmptyJSON
     case DecodingFailed
+    case NoConnection
     case GeneralError
 }
 
@@ -52,8 +53,12 @@ struct CarsService: URLConverter, JSONParser {
         do {
             let carsURL = try getFileUrl(from: url)
             let session = URLSession(configuration: .default).dataTask(with: carsURL) { (data, _, error) in
-                if error != nil {
-                    completion(.failure(.GeneralError))
+                if let error = error {
+                    if error.contains(keyword: "offline") {
+                        completion(.failure(.NoConnection))
+                    } else {
+                        completion(.failure(.GeneralError))
+                    }
                 }
                 if let data = data {
                     completion(.success(data))

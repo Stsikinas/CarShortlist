@@ -36,6 +36,7 @@
 		309D3968293F499700D3958E /* CarViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D3967293F499700D3958E /* CarViewController+Extensions.swift */; };
 		309DF3C1293F4FC90081E536 /* Kanit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 309DF3C0293F4FC90081E536 /* Kanit-Regular.ttf */; };
 		309DF3C3293F51FB0081E536 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DF3C2293F51FB0081E536 /* UIFont+Extensions.swift */; };
+		309DF3C5293F59410081E536 /* Error+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309DF3C4293F59410081E536 /* Error+Extensions.swift */; };
 		30C23723293A93E7002E3BBA /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C23722293A93E7002E3BBA /* Car.swift */; };
 		30E27CBC293A655700889D6B /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E27CBB293A655700889D6B /* UIViewController+Extensions.swift */; };
 		30E27CC1293A8FC200889D6B /* MainViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E27CC0293A8FC200889D6B /* MainViewController+Extensions.swift */; };
@@ -92,6 +93,7 @@
 		309D3967293F499700D3958E /* CarViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CarViewController+Extensions.swift"; sourceTree = "<group>"; };
 		309DF3C0293F4FC90081E536 /* Kanit-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kanit-Regular.ttf"; sourceTree = "<group>"; };
 		309DF3C2293F51FB0081E536 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		309DF3C4293F59410081E536 /* Error+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Extensions.swift"; sourceTree = "<group>"; };
 		30C23722293A93E7002E3BBA /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		30E27CBB293A655700889D6B /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		30E27CC0293A8FC200889D6B /* MainViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -332,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				3019BB3C293DEB720061E685 /* String+Extensions.swift */,
+				309DF3C4293F59410081E536 /* Error+Extensions.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				3019BB41293DF1C10061E685 /* UILabel+Extensions.swift in Sources */,
 				3096D503293A52F50053CB4B /* AppDelegate.swift in Sources */,
 				3019BB33293DDAB40061E685 /* CarCard.swift in Sources */,
+				309DF3C5293F59410081E536 /* Error+Extensions.swift in Sources */,
 				3096D505293A52F50053CB4B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
