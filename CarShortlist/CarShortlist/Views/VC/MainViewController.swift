@@ -17,11 +17,12 @@ class MainViewController: UIViewController {
     // Public
     
     // Private
+    internal let segueID = "showCar"
     internal let carService = CarsService()
     internal var carsVM = [CarViewModel]()
     internal let cellID = "carCell"
     internal let loading = UIActivityIndicatorView(style: .large)
-    
+    internal var carSelected: Car?
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -30,6 +30,7 @@
 		3096D50F293A52F60053CB4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3096D50D293A52F60053CB4B /* LaunchScreen.storyboard */; };
 		3096D524293A52F60053CB4B /* CarShortlistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096D523293A52F60053CB4B /* CarShortlistUITests.swift */; };
 		3096D526293A52F60053CB4B /* CarShortlistUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3096D525293A52F60053CB4B /* CarShortlistUITestsLaunchTests.swift */; };
+		309D3962293F2E3D00D3958E /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D3961293F2E3D00D3958E /* CarViewController.swift */; };
 		30C23723293A93E7002E3BBA /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C23722293A93E7002E3BBA /* Car.swift */; };
 		30E27CBC293A655700889D6B /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E27CBB293A655700889D6B /* UIViewController+Extensions.swift */; };
 		30E27CC1293A8FC200889D6B /* MainViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E27CC0293A8FC200889D6B /* MainViewController+Extensions.swift */; };
@@ -80,6 +81,7 @@
 		3096D51F293A52F60053CB4B /* CarShortlistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarShortlistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3096D523293A52F60053CB4B /* CarShortlistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarShortlistUITests.swift; sourceTree = "<group>"; };
 		3096D525293A52F60053CB4B /* CarShortlistUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarShortlistUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		309D3961293F2E3D00D3958E /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
 		30C23722293A93E7002E3BBA /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		30E27CBB293A655700889D6B /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		30E27CC0293A8FC200889D6B /* MainViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				3096D506293A52F50053CB4B /* MainViewController.swift */,
+				309D3961293F2E3D00D3958E /* CarViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3019BB3F293DEE7C0061E685 /* UIImageView+Extensions.swift in Sources */,
+				309D3962293F2E3D00D3958E /* CarViewController.swift in Sources */,
 				30E27CBC293A655700889D6B /* UIViewController+Extensions.swift in Sources */,
 				3096D507293A52F50053CB4B /* MainViewController.swift in Sources */,
 				3019BB35293DDE3A0061E685 /* UIView+Extensions.swift in Sources */,

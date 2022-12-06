@@ -12,7 +12,7 @@ class CarViewModel {
     let carImage: String
     var description: String
     let price: String
-    let select: () -> Void
+    let select: () -> Void?
     let year: String?
     let kms: String?
     

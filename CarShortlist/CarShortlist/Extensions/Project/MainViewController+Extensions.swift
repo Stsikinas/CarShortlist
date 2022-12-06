@@ -36,6 +36,15 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let carVM = carsVM[indexPath.row]
+        carVM.select()
+    }
+    
+}
+
+extension MainViewController {
+    
     // MARK: - Update funcs
     internal func refreshData() {
         tableView.addSpinner(loading: loading)
@@ -44,7 +53,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
                 switch result {
                 case .success(let data):
                     do {
-                        self?.carsVM = try self?.carService.parse(data: data) ?? []
+                        self?.carsVM = try self?.carService.parse(data: data, view: self) ?? []
                         DispatchQueue.main.async {
                             self?.tableView.hideSpinner(loading: self?.loading)
                             self?.tableView.reloadData()
@@ -66,12 +75,24 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    public func select(_ car: CarViewModel) {
-//            let destVC = CardViewController()
-//            destVC.card = cards
-//            destVC.favoriteService = dataService?.favoritesService
-//            show(destVC, sender: self)
-        }
     
+}
+
+extension MainViewController {
+    
+    public func select(_ car: Car) {
+        performSegue(withIdentifier: segueID, sender: self)
+        carSelected = car
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueID {
+            if let destVC = segue.destination as? CarViewController,
+               let car = carSelected
+            {
+                destVC.carVM = CarViewModel(car: car)
+            }
+        }
+    }
     
 }

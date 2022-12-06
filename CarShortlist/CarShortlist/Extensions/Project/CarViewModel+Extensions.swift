@@ -14,3 +14,11 @@ extension CarViewModel {
     }
     
 }
+
+extension CarViewModel {
+    
+    /// Add a secondary initializer, to help in detail VC
+    convenience init(car: Car) {
+        self.init(car: car, select: {})
+    }
+}
