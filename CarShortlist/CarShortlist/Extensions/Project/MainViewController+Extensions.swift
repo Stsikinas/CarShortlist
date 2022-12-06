@@ -13,6 +13,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     /// Add initial properties to the tableview, for presentation purposes
     internal func setupTableView() {
+        // For testing purposes
+        tableView.accessibilityIdentifier = "tableView"
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = .none
@@ -32,7 +34,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         cell.carViewModel = carsVM[indexPath.row]
-        
+        // For testing purposes
+        cell.accessibilityIdentifier = "cell_\(indexPath.row)"
         return cell
     }
     
